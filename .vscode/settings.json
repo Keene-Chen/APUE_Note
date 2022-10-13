@@ -1,0 +1,5 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && clang $fileName -std=gnu11 -o ./build/$fileNameWithoutExt && ./build/$fileNameWithoutExt"
+    }
+}
