@@ -30,3 +30,9 @@ add_library(mytbf_thread SHARED mytbf_thread.c)
 add_executable(mytbf_test3 mytbf_test.c)
 target_compile_options(mytbf_test3 PRIVATE -std=gnu11 -pthread)
 target_link_libraries(mytbf_test3 PRIVATE mytbf_thread pthread)
+
+# mytbf_thread_cond
+add_library(mytbf_thread_cond SHARED mytbf_thread_cond.c)
+add_executable(mytbf_test4 mytbf_test.c)
+target_compile_options(mytbf_test4 PRIVATE -std=gnu11 -pthread)
+target_link_libraries(mytbf_test4 PRIVATE mytbf_thread_cond pthread)
