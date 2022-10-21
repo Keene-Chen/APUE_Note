@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
  * DateTime   : 2022.10.18-18:56:17
- * Description: 07_daemon_sigaction
+ * Description: 12_daemon_sigaction
  */
 
 #include <errno.h>

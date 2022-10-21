@@ -2,7 +2,7 @@
  * Author     : KeeneChen
  * DateTime   : 2022.10.17-10:29:31
  * Description: 计时5s time 实现版本
- * Command: gcc 02_5sec_time.c && time -p ./a.out
+ * Command: gcc 04_5sec_time.c && time -p ./a.out
  * count: 1341882153
  */
 

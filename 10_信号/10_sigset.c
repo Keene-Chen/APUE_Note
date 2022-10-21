@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
  * DateTime   : 2022.10.18-15:56:48
- * Description: 05_sigset
+ * Description: 10_sigset
  */
 
 #include <signal.h>

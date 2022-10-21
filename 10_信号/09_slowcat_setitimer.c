@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
- * DateTime   : 2022.10.17-14:58:45
- * Description: 03_slowcat 流控cat实现(令牌桶)
+ * DateTime   : 2022.10.18-15:23:53
+ * Description: 09_slowcat 使用setitimer实现
  */
 
 #include <errno.h>
@@ -10,18 +10,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/time.h>
 #include <unistd.h>
 
 #define BUF_SIZE 10
-#define BURST 100 // 最大权限值
 
-static volatile int token = 0;
+static volatile int flag = 0;
 static void alrm_handler(int s)
 {
-    alarm(1);
-    token++;
-    if (token > BURST)
-        token = BURST;
+    flag = 1;
 }
 
 int main(int argc, char const* argv[])
@@ -50,13 +47,19 @@ int main(int argc, char const* argv[])
 
     // 注册信号
     signal(SIGALRM, alrm_handler);
-    alarm(1);
+
+    // 设置时钟
+    struct itimerval itv = { .it_interval.tv_sec = 1, .it_interval.tv_usec = 0, .it_value.tv_sec = 1, .it_value.tv_usec = 0 };
+    if (setitimer(ITIMER_REAL, &itv, NULL) < 0) {
+        perror("setitimer failed");
+        exit(EXIT_FAILURE);
+    }
 
     // 读写操作
     while (1) {
-        while (token <= 0)
-            pause(); // 令牌桶等待，累加权限值token
-        token--;
+        while (!flag)
+            pause(); // 漏桶等待，不做任何事
+        flag = 0;
 
         while ((len = read(src_fd, buf, BUF_SIZE)) < 0) {
             if (errno == EINTR) // 如果系统调用被中断就又继续执行

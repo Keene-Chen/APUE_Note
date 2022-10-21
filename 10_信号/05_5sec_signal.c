@@ -1,11 +1,9 @@
 /**
  * Author     : KeeneChen
- * DateTime   : 2022.10.17-10:21:46
- * Description: volatile 优化版
- * Command: gcc 02_5sec_volatile.c -O1 && time -p ./a.out
- * time:     1341882153
- * signal:   2162453388
- * volatile: 11146237004
+ * DateTime   : 2022.10.17-10:28:26
+ * Description: 05_5sec_signal 信号实现版本
+ * Command: gcc 05_5sec_signal.c && time -p ./a.out
+ * count: 2164837222
  */
 
 #include <signal.h>
@@ -13,7 +11,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static volatile int flag = 1;
+static int flag = 1;
 static void alarm_handler(int s)
 {
     flag = 0;

@@ -1,7 +1,8 @@
 /**
  * Author     : KeeneChen
- * DateTime   : 2022.10.18-16:38:41
- * Description: 06_sigsuspend
+ * DateTime   : 2022.10.18-21:13:28
+ * Description: 13_sigsuspend_rt 实时信号不丢失
+ * Command: kill -40 606386
  */
 
 #include <signal.h>
@@ -9,6 +10,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
+#define MYRTSIG (SIGRTMIN+6) 
 
 const char* str1 = "*";
 const char* str2 = "!";
@@ -21,12 +24,12 @@ void int_handler(int s)
 int main(void)
 {
     // 注册信号
-    signal(SIGINT, int_handler);
+    signal(MYRTSIG, int_handler);
 
     // 设置信号集
     sigset_t set, oset, saveset;
     sigemptyset(&set);
-    sigaddset(&set, SIGINT);
+    sigaddset(&set, MYRTSIG);
 
     sigprocmask(SIG_UNBLOCK, &set, &saveset);
 
@@ -38,13 +41,6 @@ int main(void)
         }
         write(STDOUT_FILENO, "\n", 1);
 
-        /**
-         * sigset_t tmpset;
-         * sigprocmask(SIG_SETMASK, &oset, &tmpset);
-         * pause();
-         * sigprocmask(SIG_SETMASK, &tmpset, NULL);
-         * sigsuspend相当于上面四句的原子操作
-         */
         sigsuspend(&oset);
     }
 
