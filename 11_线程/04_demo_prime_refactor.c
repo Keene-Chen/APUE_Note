@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
  * DateTime   : 2022.10.19-20:08:43
- * Description: 03_demo_prime
+ * Description: 04_demo_prime
  */
 
 #include <pthread.h>

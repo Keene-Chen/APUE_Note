@@ -18,19 +18,13 @@ endfunction()
 
 # 设置cmake构建时查看构建参数 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-# 1
 add_test_file(01_pthread_create 01_pthread_create.c)
-# 2
 add_test_file(02_pthread_cleanup_push 02_pthread_cleanup_push.c)
-# 3
 add_test_file(03_demo_prime 03_demo_prime.c)
-# 4
-add_test_file(03_demo_prime_refactor 03_demo_prime_refactor.c)
-# 5
-add_test_file(04_demo_competition_issues 04_demo_competition_issues.c)
-# 6
-add_test_file(04_pthread_mutex_xxx 04_pthread_mutex_xxx.c)
-# 7
-add_test_file(04_demo_abcd 04_demo_abcd.c)
-# 8
-add_test_file(04_demo_prime_pool 04_demo_prime_pool.c)
+add_test_file(04_demo_prime_refactor 04_demo_prime_refactor.c)
+add_test_file(05_demo_competition_issues 05_demo_competition_issues.c)
+add_test_file(06_pthread_mutex_xxx 06_pthread_mutex_xxx.c)
+add_test_file(07_demo_abcd 07_demo_abcd.c)
+add_test_file(08_demo_prime_pool 08_demo_prime_pool.c)
+add_test_file(09_pthread_cond_xxx 09_pthread_cond_xxx.c)
+add_test_file(10_demo_abcd_cond 10_demo_abcd_cond.c)

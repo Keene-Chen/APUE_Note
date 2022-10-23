@@ -5,13 +5,14 @@
  */
 
 /**
- * 常用 API
+ * 线程相关API
  *
- * * int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_routine) (void *), void *arg);
+ * * int pthread_create(pthread_t *thread, const pthread_attr_t *attr
+ * *                    void *(*start_routine) (void *), void *arg);
  * @brief  创建一个新线程
  * @param  thread 线程标识
  * @param  attr   线程属性,为NULL是默认属性
- * @param  *start_routine   线程回调函数,运行起来就是新创建的线程
+ * @param  start_routine   线程回调函数,运行起来就是新创建的线程
  * @param  arg 线程回调函数的参数
  * @return int 成功返回0,失败返回errornum
  * @note   编译和链接需要 -pthread 参数

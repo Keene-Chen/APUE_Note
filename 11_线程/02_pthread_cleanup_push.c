@@ -5,7 +5,7 @@
  */
 
 /**
- * 常用 API
+ * 线程清理相关API
  *
  * * void pthread_cleanup_push(void (*routine)(void *),void *arg);
  * @brief  在当前线程注册一个清理回调函数

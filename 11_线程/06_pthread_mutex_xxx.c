@@ -1,13 +1,14 @@
 /**
  * Author     : KeeneChen
  * DateTime   : 2022.10.20-13:44:52
- * Description: 04_pthread_mutex_xxx
+ * Description: 06_pthread_mutex_xxx
  */
 
 /**
- * 常用 API
+ * 互斥量相关API
  *
- * * int pthread_mutex_init(pthread_mutex_t *restrict mutex,const pthread_mutexattr_t *restrict attr);
+ * * int pthread_mutex_init(pthread_mutex_t *restrict mutex,
+ * *                        const pthread_mutexattr_t *restrict attr);
  * * pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
  * @brief  互斥量初始化
  * @param  mutex pthread_mutex_t类型的互斥量变量

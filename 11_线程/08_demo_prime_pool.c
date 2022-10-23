@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
  * DateTime   : 2022.10.20-15:20:32
- * Description: 04_demo_prime_pool 多线程找质数,使用任务池实现
+ * Description: 08_demo_prime_pool 多线程找质数,使用任务池实现
  */
 
 #include <pthread.h>

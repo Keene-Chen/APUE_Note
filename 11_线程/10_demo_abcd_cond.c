@@ -1,7 +1,7 @@
 /**
  * Author     : KeeneChen
- * DateTime   : 2022.10.20-14:15:28
- * Description: 04_demo_abcd 实现终端有顺序的输出abcd个字符
+ * DateTime   : 2022.10.21-17:07:27
+ * Description: 10_demo_abcd_cond
  * ! Warning  : 该实现有强制转换警告只是用于理解互斥量,互斥量锁住的是整段代码而不是具体的哪一个变量或函数
  */
 
