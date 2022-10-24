@@ -1,6 +1,6 @@
 /**
  * Author     : KeeneChen
- * DateTime   : 2022.10.21-17:07:27
+ * DateTime   : 2022.10.23-21:56:31
  * Description: 10_demo_abcd_cond
  * ! Warning  : 该实现有强制转换警告只是用于理解互斥量,互斥量锁住的是整段代码而不是具体的哪一个变量或函数
  */
@@ -13,7 +13,9 @@
 #include <unistd.h>
 
 #define THRMAX 4
-static pthread_mutex_t mutex[THRMAX];
+static int num               = 0;
+static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+static pthread_cond_t cond   = PTHREAD_COND_INITIALIZER;
 
 static int next(int n)
 {
@@ -28,9 +30,14 @@ static void* thr_func(void* arg)
     int ch = 'a' + n; // arg = 0,1,2,3
 
     while (1) {
-        pthread_mutex_lock(mutex + n); // 锁自己,等待下一个线程来解锁
+        pthread_mutex_lock(&mutex);
+        while (num != n) {
+            pthread_cond_wait(&cond, &mutex);
+        }
         write(STDOUT_FILENO, &ch, sizeof(ch));
-        pthread_mutex_unlock(mutex + next(n)); // 解锁下一个线程的互斥量
+        num = next(num);
+        pthread_cond_broadcast(&cond);
+        pthread_mutex_unlock(&mutex);
     }
 
     pthread_exit(NULL);
@@ -42,9 +49,6 @@ int main(void)
     int err;
 
     for (int i = 0; i < THRMAX; i++) {
-        pthread_mutex_init(&mutex[i], NULL);
-        pthread_mutex_lock(&mutex[i]);
-
         err = pthread_create(&tid[i], NULL, thr_func, (void*)i);
         if (err != 0) {
             fprintf(stderr, "pthread_create failed: %s", strerror(err));
@@ -52,15 +56,14 @@ int main(void)
         }
     }
 
-    pthread_mutex_unlock(mutex + 0); // 解锁第一个线程
-
     alarm(3); // 由于线程中执行的是死循环执行不到线程回收,所以使用信号杀死当前进程
 
     // ! warning: 程序是运行不到这里的
     for (int i = 0; i < THRMAX; i++) {
         pthread_join(tid[i], NULL);
-        pthread_mutex_destroy(&mutex[i]);
     }
+    pthread_mutex_destroy(&mutex);
+    pthread_cond_destroy(&cond);
 
     return 0;
 }
