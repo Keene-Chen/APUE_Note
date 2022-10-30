@@ -37,7 +37,7 @@ static void parse(char* line, cmd_t* res)
 
 int main(void)
 {
-    char* linebuf = NULL;
+    char* linebuf       = NULL;
     size_t linebuf_size = 0;
     cmd_t cmd;
 
@@ -52,17 +52,20 @@ int main(void)
 
         if (0) {
             // TDO: 内部命令不处理
-        } else {
+        }
+        else {
             // 处理外部命令
             pid_t pid = fork();
             if (pid < 0) {
                 perror("fork failed");
                 exit(EXIT_FAILURE);
-            } else if (pid == 0) {
+            }
+            else if (pid == 0) {
                 execvp(cmd.globres.gl_pathv[0], cmd.globres.gl_pathv);
                 perror("execvp");
                 exit(EXIT_FAILURE);
-            } else if (pid > 0) {
+            }
+            else if (pid > 0) {
                 wait(NULL);
             }
         }

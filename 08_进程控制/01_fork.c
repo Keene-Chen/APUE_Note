@@ -19,10 +19,12 @@ int main(void)
     if (pid < 0) {
         perror("fork failed");
         exit(EXIT_FAILURE);
-    } else if (pid == 0) {
+    }
+    else if (pid == 0) {
         printf("The child process is running\n");
         printf("parent:%d child:%d\n", getppid(), getpid());
-    } else {
+    }
+    else {
         printf("The parent process is running\n");
         printf("parent:%d child:%d\n", getppid(), getpid());
         sleep(1);

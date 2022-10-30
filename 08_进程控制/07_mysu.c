@@ -23,13 +23,15 @@ int main(int argc, char* const argv[])
     if (pid < 0) {
         perror("fork failed");
         exit(EXIT_FAILURE);
-    } else if (pid == 0) {
+    }
+    else if (pid == 0) {
         // 设置有效用户ID
         setuid(atoi(argv[1]));
         execvp(argv[2], argv + 2);
         perror("execvp failed");
         exit(EXIT_FAILURE);
-    } else if (pid > 0) {
+    }
+    else if (pid > 0) {
         wait(NULL);
     }
 

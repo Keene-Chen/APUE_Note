@@ -1,5 +1,6 @@
 # ignore all build folders
 **build/
+**bin/
 **build-*/
 **build_*/
 

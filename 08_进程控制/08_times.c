@@ -10,12 +10,12 @@ int main()
 
     long tck = sysconf(_SC_CLK_TCK); /*获取系统时钟(1秒里有多少个)*/
 
-    time_head = times(&tms_start); /*进程运行到此时的系统时钟数(总的)*/
+    time_head = times(&tms_start);                           /*进程运行到此时的系统时钟数(总的)*/
     printf("head_time is : %f \n", time_head / (double)tck); /*此时进程所处的时间点(单位为秒)*/
 
     system("sleep 2"); /*睡眠2秒*/
 
-    time_end = times(&tms_end); /*进程到此时的系统时钟数*/
+    time_end = times(&tms_end);                            /*进程到此时的系统时钟数*/
     printf("end_time is : %f \n", time_end / (double)tck); /*此时进程所处的时间点(单位为秒)*/
 
     printf("%f\n", (time_end - time_head) / (double)tck);

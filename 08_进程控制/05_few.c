@@ -19,7 +19,8 @@ int main(void)
     if (pid < 0) {
         perror("fork failed");
         exit(EXIT_FAILURE);
-    } else if (pid == 0) {
+    }
+    else if (pid == 0) {
         execl("/bin/date", "date", "+%s", NULL);
         perror("execl failed");
         exit(EXIT_FAILURE);
