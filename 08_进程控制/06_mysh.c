@@ -1,8 +1,10 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-19:19:19
- * Description: 05_mysh
+ * @file    : 06_mysh.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-19:19:19
+ * @details : 06_mysh
  */
+
 #include <glob.h>
 #include <stdio.h>
 #include <stdlib.h>

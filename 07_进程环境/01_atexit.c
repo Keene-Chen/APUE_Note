@@ -1,8 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.10-18:59:39
- * Description: atexit
- * Command: echo $? 查看程序结束返回值
+ * @file    : 01_atexit.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.10-18:59:39
+ * @command : echo $? 查看程序结束返回值
  */
 
 #include <stdio.h>

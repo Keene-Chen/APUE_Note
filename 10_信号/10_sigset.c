@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.18-15:56:48
- * Description: 10_sigset
+ * @file    : 10_sigset.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.18-15:56:48
+ * @details : 10_sigset
  */
 
 #include <signal.h>

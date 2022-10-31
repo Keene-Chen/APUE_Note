@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.19-16:03:57
- * Description: 01_pthread_create
+ * @file    : 01_pthread_create.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.19-16:03:57
+ * @details : 01_pthread_create
  */
 
 /**

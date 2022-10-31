@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-18:56:58
- * Description: 01_fork
+ * @file    : 01_fork.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-18:56:53
+ * @details : fork创建子进程
  */
 
 #include <stdio.h>

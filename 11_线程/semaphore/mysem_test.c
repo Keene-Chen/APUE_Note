@@ -1,3 +1,10 @@
+/**
+ * @file    : mysem_test.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-21:24:03
+ * @details : mysem_test
+ */
+
 #include "mysem.h"
 
 #define N 4

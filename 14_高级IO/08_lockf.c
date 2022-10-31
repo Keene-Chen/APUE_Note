@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.27-11:08:54
- * Description: 08_lockf
+ * @file    : 08_lockf.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.27-11:08:54
+ * @details : 08_lockf
  */
 
 #include <stdio.h>

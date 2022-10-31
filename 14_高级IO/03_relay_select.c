@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.25-16:52:57
- * Description: 03_relay_select 使用select重构relay
+ * @file    : 03_relay_select.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.25-16:52:57
+ * @details : 使用select重构relay
  */
 
 /**

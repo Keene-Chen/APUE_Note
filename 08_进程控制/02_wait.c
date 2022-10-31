@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-18:56:53
- * Description: 02_wait
+ * @file    : 02_wait.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-18:56:53
+ * @details : wait回收子进程
  */
 
 #include <stdio.h>

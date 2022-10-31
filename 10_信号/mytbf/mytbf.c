@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-21:24:18
- * Description: mytbf
+ * @file    : mytbf.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-21:24:18
+ * @details : mytbf
  */
 
 #include "mytbf.h"

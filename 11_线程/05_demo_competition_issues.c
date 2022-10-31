@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.20-13:44:12
- * Description: 05_demo_competition_issues
+ * @file    : 05_demo_competition_issues.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.20-13:44:12
+ * @details : 05_demo_competition_issues
  */
 
 #include <pthread.h>

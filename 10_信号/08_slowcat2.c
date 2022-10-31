@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-14:58:45
- * Description: 08_slowcat 流控cat实现(令牌桶)
+ * @file    : 08_slowcat2.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-14:58:45
+ * @details : 流控cat实现(令牌桶)
  */
 
 #include <errno.h>

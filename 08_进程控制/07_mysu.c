@@ -1,8 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.13-10:26:38
- * Description: 06_mysu
- * Command: mysu 0 cat /etc/shadow
+ * @file    : 07_mysu.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.13-10:26:38
+ * @command : mysu 0 cat /etc/shadow
  */
 
 #include <stdio.h>

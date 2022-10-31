@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.13-19:02:42
- * Description: 创建守护程序 每隔一秒写入当前时间
+ * @file    : 01_daemon.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.13-19:02:42
+ * @details : 创建守护程序 每隔一秒写入当前时间
  */
 
 #include <fcntl.h>
@@ -19,7 +20,8 @@ static int create_daemon(void)
     if (pid < 0) {
         perror("fork failed");
         return -1;
-    } else if (pid > 0) {
+    }
+    else if (pid > 0) {
         exit(EXIT_SUCCESS); // 父进程退出
     }
 
@@ -58,7 +60,7 @@ int main(void)
     char buf[64];
 
     for (int i = 0;; i++) {
-        time_t stamp = time(NULL);
+        time_t stamp  = time(NULL);
         struct tm* tm = localtime(&stamp);
         strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", tm);
 

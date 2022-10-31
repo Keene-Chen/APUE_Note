@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.27-11:27:17
- * Description: 09_readv_writev
+ * @file    : 09_readv_writev.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.27-11:27:17
+ * @details : 09_readv_writev
  */
 
 #include <fcntl.h>

@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.18-15:23:53
- * Description: 09_slowcat 使用setitimer实现
+ * @file    : 09_slowcat_setitimer.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.18-15:23:53
+ * @details : 使用setitimer实现
  */
 
 #include <errno.h>

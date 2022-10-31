@@ -1,3 +1,10 @@
+/**
+ * @file    : 08_times.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.13-10:26:38
+ * @details : 08_times
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/times.h>

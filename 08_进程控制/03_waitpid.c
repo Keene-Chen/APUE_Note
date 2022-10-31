@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-18:56:47
- * Description: 03_waitpid
+ * @file    : 03_waitpid.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-19:00:53
+ * @details : waitpid回收指定子进程
  */
 
 #include <stdio.h>

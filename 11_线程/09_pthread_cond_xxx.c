@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.21-16:02:54
- * Description: 09_pthread_cond_xxx 使用多线程中的条件变量找质数,非忙等
+ * @file    : 09_pthread_cond_xxx.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.21-16:02:54
+ * @details : 使用多线程中的条件变量找质数,非忙等
  */
 
 /**

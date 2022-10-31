@@ -1,3 +1,10 @@
+/**
+ * @file    : mysem.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-21:24:03
+ * @details : mysem
+ */
+
 #include "mysem.h"
 
 typedef struct {

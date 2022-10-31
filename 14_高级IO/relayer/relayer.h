@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.25-16:11:20
- * Description: relayer
+ * @file    : relayer.h
+ * @author  : KeeneChen
+ * @date    : 2022.10.25-16:11:20
+ * @details : relayer
  */
 
 #ifndef __RELAYER_H__
@@ -38,7 +39,7 @@ typedef struct rel_stat_s {
  *         == -ENOSPC 任务数组满
  *         == -ENOMEM 内存分配出错
  */
-int rel_job_add(int fd1,int fd2);
+int rel_job_add(int fd1, int fd2);
 
 /**
  * @brief  取消任务

@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.27-08:11:45
- * Description: 05_relay_epoll 使用epoll重构relay
+ * @file    : 05_relay_epoll.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.27-08:11:45
+ * @details : 使用epoll重构relay
  */
 
 /**

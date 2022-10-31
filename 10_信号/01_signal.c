@@ -1,8 +1,10 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.14-13:50:31
- * Description: 01_signal
+ * @file    : 01_signal.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.14-13:50:31
+ * @details : signal注册信号
  */
+
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>

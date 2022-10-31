@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.19-20:08:43
- * Description: 04_demo_prime
+ * @file    : 04_demo_prime_refactor.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.19-20:08:43
+ * @details : 04_demo_prime_refactor
  */
 
 #include <pthread.h>

@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.25-16:11:29
- * Description: relayer_test
+ * @file    : relayer_test.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.25-16:11:29
+ * @details : relayer_test
  */
 
 #include "relayer.h"
@@ -23,7 +24,7 @@ int main(void)
 {
     int fd[3] = { 0 };
 
-    //假设用户使用阻塞的方式打开设备
+    // 假设用户使用阻塞的方式打开设备
     fd[1] = open_file(TTY1, O_RDWR);
     write(fd[1], "tty1\n", 5);
 

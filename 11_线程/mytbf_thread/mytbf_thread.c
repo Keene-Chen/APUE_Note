@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.21-9:50:33
- * Description: mytbf 多线程重构版
+ * @file    : mytbf_thread.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.21-9:50:33
+ * @details : 多线程重构版
  * !BUG: 当前程序还是会忙等,使用异步事件的查询法
  */
 

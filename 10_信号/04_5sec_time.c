@@ -1,8 +1,9 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-10:29:31
- * Description: 计时5s time 实现版本
- * Command: gcc 04_5sec_time.c && time -p ./a.out
+ * @file    : 04_5sec_time.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-10:29:31
+ * @details : 计时5s time 实现版本
+ * @command : gcc 04_5sec_time.c && time -p ./a.out
  * count: 1341882153
  */
 

@@ -1,3 +1,9 @@
+/**
+ * @file   : 05_setjmp.c
+ * @author : KeeneChen
+ * @date   : 2022.10.11-14:35:30
+ */
+
 #include <setjmp.h>
 #include <stdio.h>
 
@@ -27,7 +33,8 @@ static void a(void)
         printf("%s: call b()\n", __FUNCTION__);
         b();
         printf("%s: b() return\n", __FUNCTION__);
-    } else {
+    }
+    else {
         printf("%s Jump Succeed: %d\n", __FUNCTION__, ret);
     }
     printf("%s: end\n", __FUNCTION__);

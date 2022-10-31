@@ -7,24 +7,23 @@ project(
 
 # 设置语言标准
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED True)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 设置默认构建类型
 if(NOT CMAKE_BUILD_TYPE)
   if("${CMAKE_BINARY_DIR}" MATCHES "build_.*(D|d)ebug$")
-    message(STATUS ">>> No build type selected, default to *** Debug *** >>>")
+    message(STATUS ">>> Build Debug Type >>>")
     set(CMAKE_BUILD_TYPE "Debug")
   elseif("${CMAKE_BINARY_DIR}" MATCHES "build_.*(R|r)elWithDebInfo$")
-    message(
-      STATUS ">>> No build type selected, default to *** RelWithDebInfo *** >>>"
-    )
+    message(STATUS ">>> Build RelWithDebInfo Type >>>")
     set(CMAKE_BUILD_TYPE "RelWithDebInfo")
   elseif("${CMAKE_BINARY_DIR}" MATCHES "build_.*(M|m)inSizeRel$")
-    message(
-      STATUS ">>> No build type selected, default to *** MinSizeRel *** >>>")
+    message(STATUS ">>> Build MinSizeRel Type>>>")
     set(CMAKE_BUILD_TYPE "MinSizeRel")
   else()
-    message(STATUS ">>> No build type selected, default to *** Release *** >>>")
+    message(STATUS ">>> Build Release Type >>>")
     set(CMAKE_BUILD_TYPE "Release")
   endif()
 endif()

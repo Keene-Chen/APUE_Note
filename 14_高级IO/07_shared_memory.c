@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.27-10:24:47
- * Description: 07_shared_memory 有血缘关系的进程间通信,父子进程使用mmap通信,父进程读子进程写
+ * @file    : 07_shared_memory.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.27-10:24:47
+ * @details : 有血缘关系的进程间通信,父子进程使用mmap通信,父进程读子进程写
  */
 
 #include <fcntl.h>

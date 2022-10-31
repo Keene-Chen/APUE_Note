@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.18-16:38:41
- * Description: 11_sigsuspend
+ * @file    : 11_sigsuspend.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.18-16:38:41
+ * @details : 11_sigsuspend
  */
 
 #include <signal.h>

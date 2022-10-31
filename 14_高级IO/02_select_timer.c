@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.25-16:37:21
- * Description: select当定时器使用
+ * @file    : 02_select_timer.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.25-16:37:21
+ * @details : select当定时器使用
  */
 
 #include <stdio.h>

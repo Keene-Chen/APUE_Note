@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-18:51:59
- * Description: 04_execl
+ * @file    : 04_execl.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-18:51:59
+ * @details : 04_execl
  */
 
 #include <stdio.h>

@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.13-19:19:53
- * Description: 01_daemon_refactor
+ * @file    : 02_daemon_refactor.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.13-19:19:53
+ * @details : 02_daemon_refactor
  */
 
 #include <errno.h>
@@ -21,7 +22,8 @@ static int create_daemon(void)
     if (pid < 0) {
         perror("fork failed");
         return -1;
-    } else if (pid > 0) {
+    }
+    else if (pid > 0) {
         exit(EXIT_SUCCESS); // 父进程退出
     }
 
@@ -54,10 +56,11 @@ int main(void)
     openlog("daemon", LOG_PID, LOG_DAEMON);
 
     // 创建守护进程
-    if (create_daemon()!=0) {
+    if (create_daemon() != 0) {
         syslog(LOG_ERR, "create daemon failed");
         exit(EXIT_SUCCESS);
-    } else {
+    }
+    else {
         syslog(LOG_INFO, "create daemon succeed");
     }
 
@@ -68,7 +71,7 @@ int main(void)
     char buf[64];
 
     for (int i = 0;; i++) {
-        time_t stamp = time(NULL);
+        time_t stamp  = time(NULL);
         struct tm* tm = localtime(&stamp);
         strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", tm);
 

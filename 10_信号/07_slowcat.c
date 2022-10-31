@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-14:58:45
- * Description: 07_slowcat 流控cat实现(漏桶)
+ * @file    : 07_slowcat.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-14:58:45
+ * @details : 流控cat实现(漏桶)
  */
 
 #include <errno.h>
@@ -63,9 +64,8 @@ int main(int argc, char const* argv[])
                 break;
             }
         }
-        
-        if (len == 0)
-        {
+
+        if (len == 0) {
             break;
         }
 

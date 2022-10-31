@@ -1,8 +1,9 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-10:28:26
- * Description: 05_5sec_signal 信号实现版本
- * Command: gcc 05_5sec_signal.c && time -p ./a.out
+ * @file    : 05_5sec_signal.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.31-21:56:04
+ * @details : 信号实现版本
+ * @command : gcc 05_5sec_signal.c && time -p ./a.out
  * count: 2164837222
  */
 

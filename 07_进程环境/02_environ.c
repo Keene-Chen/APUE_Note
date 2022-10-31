@@ -1,3 +1,10 @@
+/**
+ * @file    : 02_environ.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.10-19:00:39
+ * @details : 02_environ
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

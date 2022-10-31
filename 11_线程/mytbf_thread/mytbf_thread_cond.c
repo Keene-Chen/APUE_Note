@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.21-14:34:33
- * Description: mytbf 多线程条件变量重构版
+ * @file    : mytbf_thread_cond.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.21-14:34:33
+ * @details : 多线程条件变量重构版
  */
 
 /**

@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.26-15:47:35
- * Description: 04_relay_poll 使用poll重构relay
+ * @file    : 04_relay_poll.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.26-15:47:35
+ * @details : 使用poll重构relay
  */
 
 /**

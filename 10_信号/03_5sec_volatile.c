@@ -1,8 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-10:21:46
- * Description: volatile 优化版
- * Command: gcc 03_5sec_volatile.c -O1 && time -p ./a.out
+ * @file    : 03_5sec_volatile.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-10:21:46
+ * @command : gcc 03_5sec_volatile.c -O1 && time -p ./a.out
  * time:     1341882153
  * signal:   2162453388
  * volatile: 11146237004

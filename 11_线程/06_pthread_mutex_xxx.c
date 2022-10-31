@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.20-13:44:52
- * Description: 06_pthread_mutex_xxx
+ * @file    : 06_pthread_mutex_xxx.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.20-13:44:52
+ * @details : 06_pthread_mutex_xxx
  */
 
 /**

@@ -1,8 +1,10 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.12-18:58:45
- * Description: 05_few 联用 fork execl wait函数
+ * @file    : 05_few.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.12-18:58:45
+ * @details : 联用 fork execl wait函数
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>

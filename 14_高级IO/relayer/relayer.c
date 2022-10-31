@@ -1,8 +1,9 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.25-16:11:10
- * Description: relayer
- * ? Warning  : 程序是忙等状态
+ * @file    : relayer.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.25-16:11:10
+ * @details : relayer
+ * @warning : 程序是忙等状态
  */
 
 #include "relayer.h"
@@ -113,11 +114,11 @@ static void* thr_relayer(void* arg)
         for (int i = 0; i < REL_JOB_MAX; i++) {
             if (rel_job[i] != NULL) {
                 if (rel_job[i]->job_state == STATE_RUNNING) {
-                    //尝试发动状态机
+                    // 尝试发动状态机
                     fsm_driver(&rel_job[i]->fsm_rl_wr);
                     fsm_driver(&rel_job[i]->fsm_rr_wl);
                     if (rel_job[i]->fsm_rl_wr.state == STATE_T && rel_job[i]->fsm_rr_wl.state == STATE_T) {
-                        rel_job[i]->job_state = STATE_OVER; //两个状态机都已经停止 任务结束
+                        rel_job[i]->job_state = STATE_OVER; // 两个状态机都已经停止 任务结束
                     }
                 }
             }
@@ -174,7 +175,7 @@ int rel_job_add(int fd1, int fd2)
     int pos = get_free_pos_unlocked();
     if (pos < 0) {
         pthread_mutex_unlock(&job_mutex);
-        //恢复原来的文件描述符状态
+        // 恢复原来的文件描述符状态
         fcntl(job->fd[1], F_SETFL, job->fd_save[1]);
         fcntl(job->fd[2], F_SETFL, job->fd_save[2]);
         mi_free(job);

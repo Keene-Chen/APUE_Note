@@ -1,8 +1,9 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.24-15:26:55
- * Description: openmp多线程标准
- * Command    : gcc 11_openmp.c -Wall -fopenmp
+ * @file    : 11_openmp.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.24-15:26:55
+ * @details : openmp多线程标准
+ * @command : gcc 11_openmp.c -Wall -fopenmp
  */
 
 /**

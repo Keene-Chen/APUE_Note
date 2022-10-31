@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-14:57:12
- * Description: 06_mycat
+ * @file    : 06_mycat.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-14:57:12
+ * @details : 06_mycat
  */
 
 #include <fcntl.h>

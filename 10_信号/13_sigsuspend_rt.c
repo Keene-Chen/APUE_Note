@@ -1,8 +1,9 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.18-21:13:28
- * Description: 13_sigsuspend_rt 实时信号不丢失
- * Command: kill -40 606386
+ * @file    : 13_sigsuspend_rt.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.18-21:13:28
+ * @details : 实时信号不丢失
+ * @command : kill -40 606386
  */
 
 #include <signal.h>
@@ -11,7 +12,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define MYRTSIG (SIGRTMIN+6) 
+#define MYRTSIG (SIGRTMIN + 6)
 
 const char* str1 = "*";
 const char* str2 = "!";

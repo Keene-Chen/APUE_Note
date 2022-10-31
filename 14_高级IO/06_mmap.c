@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.27-09:30:05
- * Description: 06_mmap
+ * @file    : 06_mmap.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.27-09:30:05
+ * @details : 06_mmap
  */
 
 #include <fcntl.h>

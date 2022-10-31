@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.19-16:53:51
- * Description: 02_pthread_cleanup_push
+ * @file    : 02_pthread_cleanup_push.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.19-16:53:51
+ * @details : 02_pthread_cleanup_push
  */
 
 /**

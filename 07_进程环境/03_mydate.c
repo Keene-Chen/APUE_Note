@@ -1,7 +1,7 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.11-14:35:30
- * Description: mydate
+ * @file   : 03_mydate.c
+ * @author : KeeneChen
+ * @date   : 2022.10.11-14:35:30
  */
 
 #include <stdio.h>
@@ -15,12 +15,12 @@
 int main(int argc, char* const argv[])
 {
     char fmtstr[MAX_SIZE] = { 0 };
-    char buf[MAX_SIZE] = { 0 };
+    char buf[MAX_SIZE]    = { 0 };
     char ch;
     FILE* fp = stdout;
 
     // 获取时间
-    time_t stamp = time(NULL);
+    time_t stamp  = time(NULL);
     struct tm* tm = localtime(&stamp);
 
     while (1) {

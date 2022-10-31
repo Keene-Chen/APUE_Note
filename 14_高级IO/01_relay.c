@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.24-19:31:27
- * Description: 01_relay 有限状态机实现
+ * @file    : 01_relay.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.31-22:10:23
+ * @details : 有限状态机实现
  */
 
 #include <errno.h>

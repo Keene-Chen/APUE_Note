@@ -1,10 +1,11 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.19-21:11:34
- * Description: 测试单进程最大可创建多少线程
- * Command    : gcc test_thread_create_max.c -pthread
- * Environment: Linux x64 1H2G
- * Result     : 32752个 资源瓶颈不是栈大小,而是tid耗尽
+ * @file    : test_thread_create_max.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.19-21:11:34
+ * @details : 测试单进程最大可创建多少线程
+ * @command : gcc test_thread_create_max.c -pthread
+ * @environment : Linux x64 1H2G
+ * @result  : 32位304个; 64位32752个,资源瓶颈不是栈大小,而是tid耗尽
  */
 
 #include <pthread.h>

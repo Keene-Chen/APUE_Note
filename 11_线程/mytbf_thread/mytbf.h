@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-21:24:03
- * Description: mytbf
+ * @file    : mytbf.h
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-21:24:03
+ * @details : mytbf
  */
 
 #ifndef __MYTBF_H__

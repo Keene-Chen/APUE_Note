@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.20-15:20:32
- * Description: 08_demo_prime_pool 多线程找质数,使用任务池实现
+ * @file    : 08_demo_prime_pool.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.20-15:20:32
+ * @details : 多线程找质数,使用任务池实现
  */
 
 #include <pthread.h>

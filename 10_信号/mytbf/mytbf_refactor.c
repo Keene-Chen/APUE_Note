@@ -1,7 +1,8 @@
 /**
- * Author     : KeeneChen
- * DateTime   : 2022.10.17-21:24:18
- * Description: 重构mytbf,由于signal函数无法区分信号的来源
+ * @file    : mytbf_refactor.c
+ * @author  : KeeneChen
+ * @date    : 2022.10.17-21:24:18
+ * @details : 重构mytbf,由于signal函数无法区分信号的来源
  * 容易被攻击,所以使用sigaction重构
  */
 
