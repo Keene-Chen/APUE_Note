@@ -3,6 +3,8 @@
 **bin/
 **build-*/
 **build_*/
+bin
+cmake-build
 
 # Prerequisites
 *.d

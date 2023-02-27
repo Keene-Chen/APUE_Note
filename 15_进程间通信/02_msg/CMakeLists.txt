@@ -4,7 +4,12 @@ project(
   DESCRIPTION "进程间通信-消息队列")
 
 # 设置可执行文件、库生成位置
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PROJECT_NAME})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
+    ${CMAKE_BINARY_DIR}/bin/lib/15_IPC/${PROJECT_NAME})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY
+    ${CMAKE_BINARY_DIR}/bin/lib/15_IPC/${PROJECT_NAME})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
+    ${CMAKE_SOURCE_DIR}/bin/15_IPC/${PROJECT_NAME})
 
-add_test_file(rcver rcver.c)
-add_test_file(snder snder.c)
+add_executable(rcver rcver.c)
+add_executable(snder snder.c)
