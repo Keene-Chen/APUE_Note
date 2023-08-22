@@ -47,8 +47,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define LEFT 30000000
-#define RIGHT 30000200
+#define LEFT   30000000
+#define RIGHT  30000200
 #define THRMAX 4 // 线程最大数
 
 static int task_num          = 0; // 使用全局变量,模拟任务池中的任务

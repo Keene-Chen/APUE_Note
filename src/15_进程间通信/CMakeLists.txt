@@ -1,6 +1,6 @@
 project(
   15_IPC
-  VERSION 1.0.0
+  VERSION 1.0.1
   DESCRIPTION "进程间通信")
 
 add_subdirectory(01_pipe)

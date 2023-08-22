@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10.0)
 
 project(
   APUE_Note
-  VERSION 1.0.0
+  VERSION 1.0.1
   DESCRIPTION "APUE 阅读笔记")
 
 # 设置语言标准
@@ -38,11 +38,18 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 # 开启测试
 enable_testing()
+
+# 自定义生成可执行文件函数
+function(add_exec FILE_NAME)
+  string(REPLACE ".c" "" TEST_NAME ${FILE_NAME})
+  add_executable(${TEST_NAME} ${FILE_NAME})
+endfunction()
+
 # 添加子目录
-add_subdirectory(07_进程环境)
-add_subdirectory(08_进程控制)
-add_subdirectory(10_信号)
-add_subdirectory(11_线程)
-add_subdirectory(13_守护进程)
-add_subdirectory(14_高级IO)
-add_subdirectory(15_进程间通信)
+add_subdirectory(src/07_进程环境)
+add_subdirectory(src/08_进程控制)
+add_subdirectory(src/10_信号)
+add_subdirectory(src/11_线程)
+add_subdirectory(src/13_守护进程)
+add_subdirectory(src/14_高级IO)
+add_subdirectory(src/15_进程间通信)
