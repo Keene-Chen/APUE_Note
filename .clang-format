@@ -396,7 +396,7 @@ PenaltyReturnTypeOnItsOwnLine: 60
 # 101 指针和引用的对齐
 # clang-format 3.7
 # enum: [Left,Right,Middle]
-PointerAlignment: Left
+PointerAlignment: Right
 
 # 105 引用对齐
 # clang-format 13
