@@ -9,6 +9,8 @@ project(02_msg DESCRIPTION "进程间通信-消息队列")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
     ${CMAKE_SOURCE_DIR}/bin/15_IPC/${PROJECT_NAME})
 
-# 自定义函数添加可执行文件
-add_exec(rcver.c)
-add_exec(snder.c)
+# 定义源文件列表
+set(SOURCE_FILES rcver.c snder.c)
+
+# 自定义函数生成可执行文件
+add_exec(${SOURCE_FILES})

@@ -42,9 +42,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 enable_testing()
 
 # 自定义生成可执行文件函数
-function(add_exec FILE_NAME)
-  string(REPLACE ".c" "" FILE_NAME_PREFIX ${FILE_NAME})
-  add_executable(${FILE_NAME_PREFIX} ${FILE_NAME})
+function(add_exec ${SOURCE_FILES})
+  # 循环遍历源文件列表
+  foreach(FILE ${SOURCE_FILES})
+    # 获取文件名（不包含扩展名）
+    get_filename_component(FILENAME ${FILE} NAME_WE)
+    # 添加二进制文件规则，命名方式为数字加文件名
+    add_executable(${FILENAME} ${FILE})
+  endforeach()
 endfunction()
 
 # 添加子目录
