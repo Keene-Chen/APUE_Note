@@ -5,6 +5,8 @@
 **build_*/
 bin
 cmake-build
+cmake-vscode
+cmake-ninja
 
 # Prerequisites
 *.d

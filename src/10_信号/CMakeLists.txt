@@ -1,11 +1,14 @@
-project(
-  10_signal
-  VERSION 1.0.1
-  DESCRIPTION "信号")
+#[[
+# Author : KeeneChen
+# Date   : 2022.10.14-13:50:31
+#]]
+
+project(10_signal DESCRIPTION "信号")
 
 # 设置可执行文件生成位置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PROJECT_NAME})
 
+# 自定义函数添加可执行文件
 add_exec(01_signal.c)
 add_exec(02_alarm.c)
 add_exec(03_5sec_volatile.c)

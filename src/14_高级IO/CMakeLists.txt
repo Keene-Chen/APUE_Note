@@ -1,7 +1,9 @@
-project(
-  14_advance_io
-  VERSION 1.0.0
-  DESCRIPTION "高级IO")
+#[[
+# Author : KeeneChen
+# Date   : 2022.10.31-22:10:23
+#]]
+
+project(14_advance_io DESCRIPTION "高级IO")
 
 # 设置可执行文件生成位置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PROJECT_NAME})
@@ -9,6 +11,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PROJECT_NAME})
 # 添加编译选项
 add_compile_options(-std=gnu11 -pthread)
 
+# 自定义函数添加可执行文件
 add_exec(01_relay.c)
 add_exec(02_select_timer.c)
 add_exec(03_relay_select.c)

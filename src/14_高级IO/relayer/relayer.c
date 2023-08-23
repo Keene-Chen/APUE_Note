@@ -117,7 +117,8 @@ static void* thr_relayer(void* arg)
                     // 尝试发动状态机
                     fsm_driver(&rel_job[i]->fsm_rl_wr);
                     fsm_driver(&rel_job[i]->fsm_rr_wl);
-                    if (rel_job[i]->fsm_rl_wr.state == STATE_T && rel_job[i]->fsm_rr_wl.state == STATE_T) {
+                    if (rel_job[i]->fsm_rl_wr.state == STATE_T
+                        && rel_job[i]->fsm_rr_wl.state == STATE_T) {
                         rel_job[i]->job_state = STATE_OVER; // 两个状态机都已经停止 任务结束
                     }
                 }

@@ -2,8 +2,10 @@ cmake_minimum_required(VERSION 3.10.0)
 
 project(
   APUE_Note
-  VERSION 1.0.1
-  DESCRIPTION "APUE 阅读笔记")
+  VERSION 1.0.2
+  HOMEPAGE_URL "https://github.com/Keene-Chen/APUE_Note"
+  DESCRIPTION "APUE 阅读笔记"
+  LANGUAGES C CXX)
 
 # 设置语言标准
 set(CMAKE_C_STANDARD 11)
@@ -41,8 +43,8 @@ enable_testing()
 
 # 自定义生成可执行文件函数
 function(add_exec FILE_NAME)
-  string(REPLACE ".c" "" TEST_NAME ${FILE_NAME})
-  add_executable(${TEST_NAME} ${FILE_NAME})
+  string(REPLACE ".c" "" FILE_NAME_PREFIX ${FILE_NAME})
+  add_executable(${FILE_NAME_PREFIX} ${FILE_NAME})
 endfunction()
 
 # 添加子目录
